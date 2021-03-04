@@ -1,0 +1,11 @@
+{
+  "title": "Wash 101",
+  "description": "washcloud Shell - Wash Tutorials",
+  "courses": [
+    {
+      "title": "Wash 101 - Your First Actor",
+      "description": "Introduction to Wash actor workflow",
+      "course_id": "first-actor"
+    }
+  ]
+}

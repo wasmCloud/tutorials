@@ -1,0 +1,11 @@
+{
+  "title": "Wash 100",
+  "description": "washcloud Shell - Wash Beginner Tutorials",
+  "courses": [
+    {
+      "title": "Wash 100 - REPL Introduction",
+      "description": "Introduction to wasmcloud REPL",
+      "course_id": "repl-intro"
+    }
+  ]
+}
