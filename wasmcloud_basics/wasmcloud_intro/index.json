@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "title": "Introduction to wasmcloud",
   "description": "A brief introduction to wasmcloud and its higher level concepts",
   "details": {
@@ -19,6 +20,21 @@
       {
         "title": "Echo Server Demo",
         "text": "demo.md"
+=======
+  "title": "<COURSE TITLE>",
+  "description": "<COURSE DESCRIPTION>",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1",
+        "text": "step1.md",
+        "foreground": "foreground.sh"
+      },
+      {
+        "title": "Step 2",
+        "text": "step2.md",
+        "foreground": "foreground.sh"
+>>>>>>> Wasmcloud Intro tutorial init
       }
     ],
     "intro": {
@@ -39,10 +55,15 @@
   },
   "files": [],
   "environment": {
+<<<<<<< HEAD
     "uieditorpath": "/root/example",
     "hidefinish": true,
     "hideHiddenFiles": true,
     "uilayout": "vscode-terminal-split"
+=======
+    "hidefinish": true,
+    "uilayout": "terminal"
+>>>>>>> Wasmcloud Intro tutorial init
   },
   "backend": {
     "imageid": "ubuntu:1804"

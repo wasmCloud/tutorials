@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # WELCOME TO `wasmcloud`!!
 
 `wasmcloud` is a platform designed to help developers rapidly code secure-by-default business logic with a rapid feedback loop that is free from the burden of boilerplate, integrated dependencies, and tight coupling to non-functional requirements.
@@ -17,3 +18,10 @@ In this tutorial, we hope you walk away understanding:
 - the goals of wasmcloud
 - the most common settings for initalizing `wasmcloud`
 - how to get started quickly using a `manifest.yaml`
+=======
+## Initial popup screen!
+
+This will show up with the "Start tutorial" button.
+It also kicks off the script that builds the environment, so keeping people here
+    with some good content will allow them to experience less of a startup time.
+>>>>>>> Wasmcloud Intro tutorial init

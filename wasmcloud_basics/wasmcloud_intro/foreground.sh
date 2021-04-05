@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/bin/bash
 
 clear
@@ -16,3 +17,11 @@ do
     done
 done
 clear && wasmcloud -V
+=======
+echo "Initalizing Environment, please wait!"
+while [ ! -f /tmp/.init_done ]
+    do sleep 2
+done
+
+wash up
+>>>>>>> Wasmcloud Intro tutorial init
