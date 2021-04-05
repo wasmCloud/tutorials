@@ -1,0 +1,11 @@
+{
+  "title": "Developing Applications with wasmcloud",
+  "description": "Learn how to develop applications using the wasmcloud ecosystem",
+  "courses": [
+    {
+      "title": "Your First Actor",
+      "description": "Introduction to actor workflow",
+      "course_id": "first-actor"
+    }
+  ]
+}
