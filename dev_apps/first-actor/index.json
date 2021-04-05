@@ -1,6 +1,6 @@
 {
-  "title": "Wash101 - First Actor",
-  "description": "Getting familiar with the actor workflow",
+  "title": "<COURSE TITLE>",
+  "description": "<COURSE DESCRIPTION>",
   "details": {
     "steps": [
       {
@@ -10,15 +10,8 @@
       },
       {
         "title": "Step 2",
-        "text": "step2.md"
-      },
-      {
-        "title": "Step 3",
-        "text": "step3.md"
-      },
-      {
-        "title": "Step 4",
-        "text": "step4.md"
+        "text": "step2.md",
+        "foreground": "foreground.sh"
       }
     ],
     "intro": {
@@ -32,10 +25,6 @@
       "client": [
         {
           "file": "docker-compose.yml",
-          "target": "/root"
-        },
-        {
-          "file": "table_tennis.wasm",
           "target": "/root"
         }
       ]
