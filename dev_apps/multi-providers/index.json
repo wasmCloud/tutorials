@@ -1,0 +1,41 @@
+{
+  "title": "<COURSE TITLE>",
+  "description": "<COURSE DESCRIPTION>",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1",
+        "text": "step1.md",
+        "foreground": "foreground.sh"
+      },
+      {
+        "title": "Step 2",
+        "text": "step2.md",
+        "foreground": "foreground.sh"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        {
+          "file": "docker-compose.yml",
+          "target": "/root"
+        }
+      ]
+    }
+  },
+  "files": [],
+  "environment": {
+    "hidefinish": true,
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu:1804"
+  }
+}
