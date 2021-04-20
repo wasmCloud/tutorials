@@ -39,11 +39,11 @@
   },
   "files": [],
   "environment": {
+    "uieditorpath": "/root/example",
     "hidefinish": true,
+    "hideHiddenFiles": true,
     "uilayout": "vscode-terminal-split",
-    "terminals": [
-      { "name": "curl", "target": "c" }
-    ]
+    "terminals": [{ "name": "curl", "command": "bash", "target": "c" }]
   },
   "backend": {
     "imageid": "ubuntu:1804"
