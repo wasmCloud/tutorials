@@ -1,5 +1,7 @@
 #!/bin/bash
 
+clear
+
 spin[0]="-"
 spin[1]="\\"
 spin[2]="|"

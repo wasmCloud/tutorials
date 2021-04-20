@@ -42,8 +42,7 @@
     "uieditorpath": "/root/example",
     "hidefinish": true,
     "hideHiddenFiles": true,
-    "uilayout": "vscode-terminal-split",
-    "terminals": [{ "name": "curl", "command": "/bin/bash", "target": "host02" }]
+    "uilayout": "vscode-terminal-split"
   },
   "backend": {
     "imageid": "ubuntu:1804"
