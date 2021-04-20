@@ -33,7 +33,7 @@ Labels are a set of arbitrary key-value pairs that are associated with the host.
 
 The actor section contains a list of actor references. An actor reference in a host manifest can be either the actor’s public key, the OCI image reference URL of the actor as stored in an OCI registry, or a path to a `.wasm` file. This section is mandatory, so if you do not wish to start any actors, supply the format equivalent of an empty list/array.
 To find an actors public key, we leverage `wash`:
-`wash claims inspect wasmcloud.azurecr.io/echo:0.2.1`{{execute wc}}
+`wash claims inspect wasmcloud.azurecr.io/echo:0.2.1`{{execute}}
 
 ##### Capabilities
 
@@ -49,7 +49,7 @@ The links section is a required field contains a list of “link definitions”.
 - `actor` - The public key of the actor in this link. Note that even if you start an actor via an OCI reference, you must only ever use the actor’s public key in a link definition.
 - `provider_id` - The public key of the provider in this link.
   Again, to find the public key, we ask `wash`:
-  `wash par inspect wasmcloud.azurecr.io/httpserver:0.12.1`{{execute wc}}
+  `wash par inspect wasmcloud.azurecr.io/httpserver:0.12.1`{{execute}}
 - `contract_id` - The contract ID of the link. This corresponds to the contract ID supported by the specific capability provider being linked, e.g. wasmcloud:httpserver or wasmcloud:keyvalue, etc.
 - `link_name` - Optional field, specify this value if you are referring to a provider that used an alternate link name when being started.
 - `values` - Optional map, contains key-value pairs to be supplied as the per-actor configuration sent to the capability provider at link time.
