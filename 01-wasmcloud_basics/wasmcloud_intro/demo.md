@@ -6,4 +6,6 @@ Now that we understand the construction of a manifest file, lets start our echo 
 
 After a few seconds, the runtime will be bootstrapped and we can test our echo server!
 
-`curl localhost:8080`{{execute T2}}
+`curl localhost:8080`{{execute "host01"}}  
+`curl localhost:8080`{{execute HOST01}}  
+`curl localhost:8080`{{execute host01}}
