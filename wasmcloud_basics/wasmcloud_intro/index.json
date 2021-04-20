@@ -1,17 +1,24 @@
 {
-  "title": "<COURSE TITLE>",
-  "description": "<COURSE DESCRIPTION>",
+  "title": "Introduction to wasmcloud",
+  "description": "A brief introduction to wasmcloud and its higher level concepts",
   "details": {
     "steps": [
       {
-        "title": "Step 1",
-        "text": "step1.md",
+        "title": "Welcome to wasmcloud",
+        "text": "welcome.md",
         "foreground": "foreground.sh"
       },
       {
-        "title": "Step 2",
-        "text": "step2.md",
-        "foreground": "foreground.sh"
+        "title": "Useful configuration",
+        "text": "config.md"
+      },
+      {
+        "title": "The manifest file",
+        "text": "manifest.md"
+      },
+      {
+        "title": "Echo Server Demo",
+        "text": "demo.md"
       }
     ],
     "intro": {
@@ -33,7 +40,11 @@
   "files": [],
   "environment": {
     "hidefinish": true,
-    "uilayout": "terminal"
+    "uilayout": "vscode-terminal-split",
+    "terminals": [
+      { "name": "wasmcloud", "target": "wc" },
+      { "name": "curl", "target": "c" }
+    ]
   },
   "backend": {
     "imageid": "ubuntu:1804"
