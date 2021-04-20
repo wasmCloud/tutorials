@@ -3,9 +3,14 @@
   "description": "washcloud Beginner Tutorials",
   "courses": [
     {
-      "title": "Wash Introduction",
+      "title": "wash Introduction",
       "description": "Introduction to wasmcloud REPL",
       "course_id": "wash_intro"
+    },
+    {
+      "title": "wasmcloud Introduction",
+      "description": "Introduction to wasmcloud",
+      "course_id": "wasmcloud_intro"
     }
   ]
 }
