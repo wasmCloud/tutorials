@@ -33,6 +33,10 @@
         {
           "file": "docker-compose.yml",
           "target": "/root"
+        },
+        {
+          "file": "table_tennis.wasm",
+          "target": "/root"
         }
       ]
     }
