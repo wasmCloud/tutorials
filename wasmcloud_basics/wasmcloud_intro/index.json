@@ -42,7 +42,6 @@
     "hidefinish": true,
     "uilayout": "vscode-terminal-split",
     "terminals": [
-      { "name": "wasmcloud", "target": "wc" },
       { "name": "curl", "target": "c" }
     ]
   },
