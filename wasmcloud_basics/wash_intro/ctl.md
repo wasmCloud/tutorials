@@ -25,17 +25,19 @@ When the user wants to see what `wasmcloud` modules are deployed on a host, they
 > Note: In this example, you will need the Host ID that was output from the previous command.
 
 ```bash
-                Host Inventory (NASMSQAYVDA6HWAQ4TS6VCMSQX6MQ4VDBQFZ2YM7HFQ3MFLNPUOMXJVI)
+                Host Inventory (NASMS<..SNIP..>MXJVI)
 
- hostcore.os                                                macos
- hostcore.arch                                              x86_64
- hostcore.osfamily                                          unix
-                                             No actors found
+ hostcore.os                                        macos
+ hostcore.arch                                      x86_64
+ hostcore.osfamily                                  unix
+                     No actors found
 
- Provider ID                                                Link Name                  Image Reference
- VDHPKGFKDI34Y4RN4PWWZHRYZ6373HYRSNNEM4UTDLLOGO5B37TSVREP   default                    N/A
- VAHNM37G4ARHZ3CYHB3L34M6TYQWQR6IZ4QVYC4NYZWTJCJ2LWP7S6Z2   __wasmcloud_lattice_cache  N/A
+ Provider ID            Link Name                  Image Reference
+ VDHPK<..SNIP..>SVREP   default                    N/A
+ VAHNM<..SNIP..>7S6Z2   __wasmcloud_lattice_cache  N/A
 ```
+
+> Note: The output has been condensed for the tutorial. Your tokens will be 56 characters long and differ from the ones displayed here.
 
 ##### Important Fields
 
@@ -63,8 +65,8 @@ The output will confirm that we have started an actor. Now, we will be able to c
 ```bash
 <SNIP>
 
-Actor ID                                                   Image Reference
-MBCFOPM6JW2APJLXJD3Z5O4CN7CPYJ2B4FTKLJUR5YR5MITIU7HD3WD5   wasmcloud.azurecr.io/echo:0.2.1
+Actor ID                 Image Reference
+MBCFOP<..SNIP..>HD3WD5   wasmcloud.azurecr.io/echo:0.2.1
 
 <SNIP>
 ```
@@ -91,6 +93,7 @@ Now that you have the actor and the provider running, you need to tell them to c
 
 `ctl link <ACTOR-ID> <PROVIDER-ID> wasmcloud:httpserver PORT=8080`{{copy}}
 
-If you were to view the help for this command, you would see that the `wasmcloud:httpserver` piece is refered to as the "contract ID". These contracts can be found in this [repo](https://github.com/wasmCloud/capability-providers).
+If you were to view the help for this command, you would see that the `wasmcloud:httpserver` piece is refered to as the "contract ID". These contracts can be found in this [repo](https://github.com/wasmCloud/actor-interfaces).
 
-At this point, if you were to open a new terminal and `curl localhost:8080`, you would see your request echoed back to you.
+At this point, you should see your request echoed back to you.
+`curl localhost:8080`{{execute T2}}

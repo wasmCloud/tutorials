@@ -1,6 +1,19 @@
-echo "Initalizing Environment, please wait!"
+#!/bin/bash
+
+clear
+
+spin[0]="-"
+spin[1]="\\"
+spin[2]="|"
+spin[3]="/"
+
 while [ ! -f /tmp/.init_done ]
-    do sleep 2
+do
+  for i in "${spin[@]}"
+    do
+      echo -ne "\rInitalizing Environment, please wait! [ \b$i]"
+      sleep 0.5
+    done
 done
 
 wash up

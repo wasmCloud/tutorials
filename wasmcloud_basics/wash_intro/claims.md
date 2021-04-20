@@ -25,20 +25,21 @@ The `wash claims inspect` command allows the user to view metadata about signed 
 ```bash
 ❯ wash claims inspect ./table_tennis_s.wasm
 
-                            "Demo" - Module
- Account      AD2NOEJORCTIWZU44DIPXZ5WFXCNBFUB5AXAYB6IQFU46QYZORJAYVUN
- Module       MBNQSL5ONN3VJ5ZB3UABHLCP4WYCHGDS2EGOKH4NCGI3WLANFLXQJ7QN
- Expires                                                         never
- Can Be Used                                               immediately
- Version                                                     0.1.0 (0)
- Call Alias                                                  (Not set)
-                              Capabilities
+         "Demo" - Module
+ Account      AD2NOE<..SNIP..>JAYVUN
+ Module       MBNQSL<..SNIP..>XQJ7QN
+ Expires                       never
+ Can Be Used             immediately
+ Version                   0.1.0 (0)
+ Call Alias                (Not set)
+
+Capabilities
  HTTP Server
-                                  Tags
+Tags
  None
 ```
 
-> Note: your tokens will be different than the ones displayed here.
+> Note: The output has been condensed for the tutorial. Your tokens will be 56 characters long and differ from the ones displayed here.
 
 ##### Important Fields
 
