@@ -43,7 +43,7 @@
     "hidefinish": true,
     "hideHiddenFiles": true,
     "uilayout": "vscode-terminal-split",
-    "terminals": [{ "name": "curl", "command": "/bin/bash", "target": "host01" }]
+    "terminals": [{ "name": "curl", "command": "/bin/bash", "target": "host02" }]
   },
   "backend": {
     "imageid": "ubuntu:1804"
