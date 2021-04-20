@@ -3,4 +3,4 @@ while [ ! -f /tmp/.init_done ]
     do sleep 2
 done
 
-wash up
+clear && wasmcloud -V
