@@ -41,9 +41,9 @@ When the user wants to see what `wasmcloud` modules are deployed on a host, they
 
 ##### Important Fields
 
-In this example, you'll notice in the middle of the output `No actors found`. So far, we do not have any actors running in this environment. Next, we will start the `table_tennis` actor and you will be able to see it here.
+In this example, you'll notice in the middle of the output `No actors found`. So far, we do not have any actors running in this environment. Next, we will start the `echo` actor and you will be able to see it here.
 
-Below the actor output is running provider information.
+Below the actor output is running provider information.  
 [TODO: Describe what the 2 items in the provider section are for.]
 
 ### wash ctl start actor
