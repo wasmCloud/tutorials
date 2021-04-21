@@ -12,7 +12,7 @@ The `wash claims sign` command allows the user to sign a wasm file and couple it
 
 `claims sign ./table_tennis.wasm -c wasmcloud:httpserver --name "demo" --ver 0.1.0 --rev 0`{{execute}}
 
-The newly signed file will be along side the .wasm file with a `_s` appended to the file name. In this example, we now have `./table_tennis_s.wasm` (as seen in the wash output). Using the `inspect` command, we can see the new cababilities we added!
+The newly signed file will be along side the .wasm file with a `_s` appended to the file name. In this example, we now have `./table_tennis_s.wasm` (as seen in the wash output). Using the `inspect` command, we can see the new capabilities we added!
 
 ### wash claims inspect
 
@@ -44,4 +44,4 @@ Tags
 ##### Important Fields
 
 `Module` -> This module token will be how you reference the module within the wasmcloud ecosystem.  
-`Capabilities` -> This list shows what capability providers the actor will be allowed to talk to. In this example, the `echo` actor can only communicate with the `HTTP Server` provider. A full list of capabilities can be found [here](https://github.com/wasmCloud/capability-providers#latest-versions).
+`Capabilities` -> This list shows what capability providers the actor will be allowed to talk to. In this example, the `table_tennis` actor can only communicate with the `HTTP Server` provider. A full list of capabilities can be found [here](https://github.com/wasmCloud/capability-providers#latest-versions).
