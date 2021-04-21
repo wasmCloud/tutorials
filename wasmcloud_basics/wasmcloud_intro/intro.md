@@ -1,6 +1,4 @@
-## Initial popup screen!
-
-WELCOME TO `wasmcloud`!!
+# WELCOME TO `wasmcloud`!!
 
 `wasmcloud` is a platform designed to help developers rapidly code secure-by-default business logic with a rapid feedback loop that is free from the burden of boilerplate, integrated dependencies, and tight coupling to non-functional requirements.
 
