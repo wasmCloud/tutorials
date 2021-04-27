@@ -1,0 +1,58 @@
+{
+  "title": "Your First Actor",
+  "description": "Walk through editing, signing, deploying, and calling a calculator actor in multiple languages.",
+  "details": {
+    "steps": [
+      {
+        "title": "Choose your adventure!",
+        "text": "choose.md",
+        "foreground": "foreground.sh"
+      },
+      {
+        "title": "Code Review",
+        "text": "review.md"
+      },
+      {
+        "title": "Build and Sign your Actor",
+        "text": "buildsign.md"
+      },
+      {
+        "title": "We need multiplication!",
+        "text": "edit.md"
+      },
+      {
+        "title": "The manifest file",
+        "text": "manifest.md"
+      },
+      {
+        "title": "Run and test it!!",
+        "text": "run.md",
+        "foreground": "foreground.sh"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        {
+          "file": "docker-compose.yml",
+          "target": "/root"
+        }
+      ]
+    }
+  },
+  "files": [],
+  "environment": {
+    "uieditorpath": "/root/example/examples",
+    "hideHiddenFiles": true,
+    "uilayout": "vscode-terminal-split"
+  },
+  "backend": {
+    "imageid": "ubuntu:1804"
+  }
+}
