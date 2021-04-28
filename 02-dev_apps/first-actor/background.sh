@@ -2,6 +2,6 @@
 curl -s https://packagecloud.io/install/repositories/wasmcloud/core/script.deb.sh | bash
 apt-get install wasmcloud wash
 docker-compose up -d
-git clone https://github.com/wasmcloud/tutorials
+git clone https://github.com/wasmcloud/examples
 
 touch /tmp/.init_done
