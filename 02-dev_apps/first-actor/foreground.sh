@@ -16,4 +16,4 @@ do
   done
 done
 
-cd examples/ && clear && wasmcloud -V
+cd examples/calculator && clear && wasmcloud -V
