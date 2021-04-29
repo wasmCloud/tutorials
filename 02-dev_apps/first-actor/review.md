@@ -6,7 +6,7 @@ Depending on which language you are using in this tutorial, expand the box and l
   <summary>Rust</summary>
   First thing, lets open the file where our calculators logic exists  
   
-  `calculator/rust/src/lib.rs`{{open}}  
+  `rust/src/lib.rs`{{open}}  
   
   On line 12 we start writing our business logic.  We receive an HTTP request, check its path for `add`, `sub`, or `div`, and preform the operation on the provided input.  Our example is a bit contrived as we are doing no error checking or input validation, but all that can be added in at the developers desire!
   
@@ -17,7 +17,7 @@ Depending on which language you are using in this tutorial, expand the box and l
   <summary>Go</summary>
   First thing, lets open the file where our calculators logic exists   
   
-  `calculator/go/main.go`{{open}}  
+  `go/main.go`{{open}}  
   
   On line 25 we start writing our business logic.  We receive an HTTP request, check its path for `add`, `sub`, or `div`, and preform the operation on the provided input.  Our example is a bit contrived as we are doing no error checking or input validation, but all that can be added in at the developers desire!
   
