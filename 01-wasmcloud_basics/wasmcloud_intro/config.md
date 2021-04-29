@@ -1,42 +1,14 @@
-## Running `wasmcloud`
+# Running wasmCloud
 
-```bash
-wasmcloud 0.18.0
+`washcloud --help`{{execute}}
 
-USAGE:
-    wasmcloud [FLAGS] [OPTIONS]
+wasmCloud is more than just a binary, it's also a reusable Rust library and an ecosystem of tools.
+Each wasmCloud host that you start can be thought of as an empty vessel that is ready to run [actors](https://wasmcloud.dev/reference/host-runtime/actors/) and [capability providers](https://wasmcloud.dev/reference/host-runtime/capabilities/).
 
-FLAGS:
-        --allow-live-updates             Allows live updating of actors
-        --allow-oci-latest               Allows the use of "latest" artifact tag
-        --disable-strict-update-check    Disables strict comparison of live updated actor claims
-    -h, --help                           Prints help information
-    -V, --version                        Prints version information
+This host then checks the capabilities allowed for any given actor and securely dispatches messages between actors and capabilities. If the wasmCloud host is running in _[lattice](https://wasmcloud.dev/reference/lattice/) mode_ (often referred to by the community as "multiplayer" mode), then these message dispatches can be sent across any number of intermediary hops to their destinations. This allows wasmCloud hosts to automatically join self-forming and self-healing _lattice_ mesh networks.
 
-OPTIONS:
-        --allowed-insecure <allowed-insecure>...    Allows the use of HTTP registry connections to these registries
-        --control-credsfile <control-credsfile>     Credsfile for control interface authentication [env: CONTROL_CREDS]
-        --control-host <control-host>
-            Host for control interface connection [env: CONTROL_HOST=]  [default: 0.0.0.0]
+Starting the host with no arguments starts the process "empty", where it will expect to be told via remote control to schedule actors, capability providers, and establish links between them.
 
-        --control-jwt <control-jwt>
-            JWT file for control interface authentication. Must be supplied with control_seed [env: CONTROL_JWT]
+You can optionally start the host with a _[manifest](https://wasmcloud.dev/reference/host-runtime/manifest/)_ file, which contains a list of actors, providers, and link definitions to apply to the host once it starts up.
 
-        --control-port <control-port>
-            Port for control interface connection [env: CONTROL_PORT=]  [default: 4222]
-
-        --control-seed <control-seed>
-            Seed file or literal for control interface authentication. Must be supplied with control_jwt [env:
-            CONTROL_SEED]
-    -l, --label <labels>...                         attach a label to the host - can be used multiple times
-    -m, --manifest <manifest>                       Specifies a manifest file to apply to the host once started
-        --nsprefix <nsprefix>                       Provide a namespace prefix for the lattice used by this host
-        --rpc-credsfile <rpc-credsfile>             Credsfile for RPC authentication [env: RPC_CREDS]
-        --rpc-host <rpc-host>                       Host for RPC connection [env: RPC_HOST=]  [default: 0.0.0.0]
-        --rpc-jwt <rpc-jwt>
-            JWT file for RPC authentication. Must be supplied with rpc_seed [env: RPC_JWT]
-
-        --rpc-port <rpc-port>                       Port for RPC connection [env: RPC_PORT=]  [default: 4222]
-        --rpc-seed <rpc-seed>
-            Seed file or literal for RPC authentication. Must be supplied with rpc_jwt [env: RPC_SEED]
-```
+You can try running the host on its own, then run the host on its own in the presence of a NATS server locally (this will put you in _lattice_ ("multiplayer") mode, and in either case you can use the `-m` option at startup to supply a manifest file.
