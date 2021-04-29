@@ -5,18 +5,22 @@ First off, lets build and sign the actor as-is.  This way, we can see if the mod
 
 <details>
   <summary>Rust</summary>
-  Build it!
-  `cargo build --release`{{execute}}
-  Sign it!
-  `wash claims sign target/wasm32-unknown-unknown/release/calculator.wasm -c wasmcloud:httpserver --name "calculator" --ver 0.1.0 --rev 0`  
+  Build it!    
+  
+  `cargo build --release`{{execute}}   
+  
+  Sign it!   
+  `wash claims sign target/wasm32-unknown-unknown/release/calculator.wasm -c wasmcloud:httpserver --name "calculator" --ver 0.1.0 --rev 0`{{execute}}
 </details>
 <details>
   <summary>Go</summary>
 
-  Build it!
-  `mkdir -p build && tinygo build -o build/calculator.wasm -target wasm -no-debug main.go`{{execute}}
-  Sign it!
-  `wash claims sign build/calculator.wasm -c wasmcloud:httpserver --name "calculator" --ver 0.1.0 --rev 0`{{execute}}
+  Build it!   
+  `mkdir -p build && tinygo build -o build/calculator.wasm -target wasm -no-debug main.go`{{execute}}    
+  
+  Sign it!  
+  `wash claims sign build/calculator.wasm -c wasmcloud:httpserver --name "calculator" --ver 0.1.0 --rev 0`{{execute}}   
+  
 </details>
 <details>
   <summary>Assembly Script</summary>
@@ -33,13 +37,14 @@ Once we run `wash claims sign`, on a wasm module, notice that a new file is drop
 
 <details>
   <summary>Rust</summary>
-  Inspect it!
+  Inspect it!  
+  
   `wash claims inspect target/wasm32-unknown-unknown/release/calculator_s.wasm`{{execute}} 
 </details>
 <details>
   <summary>Go</summary>
 
-  Inspect it!
+  Inspect it!   
   `wash claims inspect build/calculator_s.wasm`{{execute}}
 </details>
 <details>
