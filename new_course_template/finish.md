@@ -1,3 +1,3 @@
 ## Congrats, you did it!
 
-This will be the screen they see after they complete the last step.
+Thanks for trying out the `wasmcloud` runtime. We are a tight knit community that would love you have you join us. Please checkout our website (wasmcloud.com)[wasmcloud.com] and join us on Slack!
