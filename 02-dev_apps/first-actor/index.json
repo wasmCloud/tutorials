@@ -26,8 +26,7 @@
       },
       {
         "title": "Run and test it!!",
-        "text": "run.md",
-        "foreground": "foreground.sh"
+        "text": "run.md"
       }
     ],
     "intro": {
