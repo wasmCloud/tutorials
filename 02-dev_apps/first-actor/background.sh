@@ -3,7 +3,7 @@
 git clone https://github.com/jordan-rash/examples /tmp/examples
 
 curl -s https://packagecloud.io/install/repositories/wasmcloud/core/script.deb.sh | bash
-apt-get install wasmcloud wash
+apt-get install wasmcloud wash cargo
 docker-compose up -d
 
 wget https://github.com/tinygo-org/tinygo/releases/download/v0.17.0/tinygo_0.17.0_amd64.deb
