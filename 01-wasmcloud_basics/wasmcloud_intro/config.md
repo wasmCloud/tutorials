@@ -1,6 +1,6 @@
 # Running wasmCloud
 
-`washcloud --help`{{execute}}
+`wasmcloud --help`{{execute}}
 
 wasmCloud is more than just a binary, it's also a reusable Rust library and an ecosystem of tools.
 Each wasmCloud host that you start can be thought of as an empty vessel that is ready to run [actors](https://wasmcloud.dev/reference/host-runtime/actors/) and [capability providers](https://wasmcloud.dev/reference/host-runtime/capabilities/).
