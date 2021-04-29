@@ -48,7 +48,7 @@
   },
   "files": [],
   "environment": {
-    "uieditorpath": "/root/examples",
+    "uieditorpath": "/root/examples/calculator",
     "hideHiddenFiles": true,
     "uilayout": "vscode-terminal-split"
   },
