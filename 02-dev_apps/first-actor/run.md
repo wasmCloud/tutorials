@@ -7,10 +7,10 @@ Since we have already done all the steps for building, signing, and pushing our 
 `make`{{execute}}
 
 And now lets start `wasmcloud` with our `manifest.yaml`!
-`wasmcloud --allowed-insecure localhost:5000 -m manifest.yaml`
+`wasmcloud --allowed-insecure localhost:5000 -m manifest.yaml`{{execute}}
 
 > Note: If you want to see more log output while `wasmcloud` is running, you can set the `RUST_LOG` environmental varible to the level you want to see! (The `Makefile` has an example under the `start` context.
 
 AND FINALLY....
 
-`curl localhost:8080/mult?5,5`
+`curl localhost:8080/mult?5,5`{{execute T2}}
