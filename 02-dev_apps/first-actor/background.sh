@@ -5,7 +5,7 @@ mv /tmp/examples/calculator /root/examples
 
 docker-compose up -d
 
-https://packagecloud.io/install/repositories/wasmcloud/core/script.deb.sh | sudo bash
+curl https://packagecloud.io/install/repositories/wasmcloud/core/script.deb.sh | sudo bash
 sudo apt install wasmcloud wash
 
 docker pull tinygo/tinygo
