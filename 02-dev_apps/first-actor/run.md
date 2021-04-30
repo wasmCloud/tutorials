@@ -5,21 +5,21 @@ Lets build it, sign it, and push it again.
 <details>
   <summary>Rust</summary>
   
-  `cargo build --release`{{execute interrupt}}   
+  `cargo build --release`{{execute interrupt T1}}   
   
-  `wash claims sign target/wasm32-unknown-unknown/release/calculator.wasm -c wasmcloud:httpserver --name "calculator" --ver 0.1.0 --rev 0`{{execute}}
+  `wash claims sign target/wasm32-unknown-unknown/release/calculator.wasm -c wasmcloud:httpserver --name "calculator" --ver 0.1.0 --rev 0`{{execute T1}}
 
-`wash drain all && wash reg push localhost:5000/calc:0.1.0 target/wasm32-unknown-unknown/release/calculator_s.wasm --insecure`{{execute}}
+`wash drain all && wash reg push localhost:5000/calc:0.1.0 target/wasm32-unknown-unknown/release/calculator_s.wasm --insecure`{{execute T1}}
 
 </details>
 <details>
   <summary>Go</summary>
 
-`mkdir -p build && tinygo build -o build/calculator.wasm -target wasm -no-debug main.go`{{execute interrupt}}
+`mkdir -p build && tinygo build -o build/calculator.wasm -target wasm -no-debug main.go`{{execute interrupt T1}}
 
-`wash claims sign build/calculator.wasm -c wasmcloud:httpserver --name "calculator" --ver 0.1.0 --rev 0`{{execute}}
+`wash claims sign build/calculator.wasm -c wasmcloud:httpserver --name "calculator" --ver 0.1.0 --rev 0`{{execute T1}}
 
-`wash drain all && wash reg push localhost:5000/calc:0.1.0 build/calculator_s.wasm --insecure`{{execute}}
+`wash drain all && wash reg push localhost:5000/calc:0.1.0 build/calculator_s.wasm --insecure`{{execute T1}}
 
 </details>
 <details>
