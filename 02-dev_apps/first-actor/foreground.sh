@@ -2,8 +2,6 @@
 
 alias cargo='docker run -it -w /data --entrypoint cargo -v $(pwd):/data cjrash/tutorial'
 alias tinygo='docker run -it -w /data -v $(pwd):/data tinygo/tinygo'
-alias wasmcloud='docker run -it -w /data -v $(pwd):/data wasmcloud/wasmcloud'
-alias wash='docker run -it -w /data -v $(pwd):/data wasmcloud/wash'
 
 clear
 
