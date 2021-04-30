@@ -5,9 +5,10 @@ mv /tmp/examples/calculator /root/examples
 
 docker-compose up -d
 
+https://packagecloud.io/install/repositories/wasmcloud/core/script.deb.sh | sudo bash
+sudo apt install wasmcloud wash
+
 docker pull tinygo/tinygo
 docker pull cjrash/tutorial
-docker pull wasmcloud/wasmcloud
-docker pull wasmcloud/wash
 
 touch /tmp/.init_done
