@@ -27,3 +27,7 @@ It is important to notice that `actor` fields in the link has an ID provided. Th
   `export CLIENT_ACTOR=$(wash claims inspect localhost:5000/calc:0.1.0 --insecure -o json | jq -r '.module')`{{execute}}
 
 Once you have the `manifest.yml` updated with the correct `actor_id`, you can start the run time and interface with your actor!
+
+> Note: At this point, everything is in place to test the current state of the actor!
+> `wasmcloud --allowed-insecure localhost:5000 -m manifest.yaml`{{execute}}
+> `curl localhost:8080/add?5,5`{{execute T2}}
