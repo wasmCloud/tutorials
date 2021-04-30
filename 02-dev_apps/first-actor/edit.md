@@ -5,6 +5,12 @@ Now that we have verified we have a functional `wasmcloud` actor, lets work on e
 
   <pre class="file" data-filename="rust/src/lib.rs" data-target="insert" data-marker="// TODO: add multiplication">
 
+Open the file:
+
+`rust/src/lib.rs`{{open}}  
+
+Add the new functionality:
+
 ```
   "/mult" => {
     let mult = nums[0].parse::<i32>().unwrap() * nums[1].parse::<i32>().unwrap();
@@ -20,6 +26,12 @@ Now that we have verified we have a functional `wasmcloud` actor, lets work on e
 </details>
 <details>
   <summary>Go</summary>
+
+Open the file:
+
+`go/main.go`{{open}}
+
+Add the new functionality:
 
   <pre class="file" data-filename="go/main.go" data-target="insert" data-marker="// TODO: add multiplication">
 

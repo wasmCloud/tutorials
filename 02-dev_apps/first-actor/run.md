@@ -5,16 +5,21 @@ Lets build it, sign it, and push it again.
 <details>
   <summary>Rust</summary>
   
-  `cargo build --release`{{execute}}   
+  `cargo build --release`{{execute interrupt}}   
   
   `wash claims sign target/wasm32-unknown-unknown/release/calculator.wasm -c wasmcloud:httpserver --name "calculator" --ver 0.1.0 --rev 0`{{execute}}
+
+`wash drain all && wash reg push localhost:5000/calc:0.1.0 target/wasm32-unknown-unknown/release/calculator_s.wasm --insecure`{{execute}}
+
 </details>
 <details>
   <summary>Go</summary>
 
-`mkdir -p build && tinygo build -o build/calculator.wasm -target wasm -no-debug main.go`{{execute}}
+`mkdir -p build && tinygo build -o build/calculator.wasm -target wasm -no-debug main.go`{{execute interrupt}}
 
 `wash claims sign build/calculator.wasm -c wasmcloud:httpserver --name "calculator" --ver 0.1.0 --rev 0`{{execute}}
+
+`wash drain all && wash reg push localhost:5000/calc:0.1.0 build/calculator_s.wasm --insecure`{{execute}}
 
 </details>
 <details>
@@ -22,12 +27,10 @@ Lets build it, sign it, and push it again.
   
 </details>
 
-`wash drain all && wash reg push localhost:5000/calc:0.1.0 build/calculator_s.wasm --insecure`{{execute}}
-
 > Note: We prefaced the registry push with a `wash drain all` which cleared the OCI cache. We did this since we are reusing the same tag.
 
 And now lets start `wasmcloud` with our `manifest.yaml`!
-`wasmcloud --allowed-insecure localhost:5000 -m manifest.yaml`{{execute interrupt host01}}
+`wasmcloud --allowed-insecure localhost:5000 -m manifest.yaml`{{execute interrupt T1}}
 
 > Note: If you want to see more log output while `wasmcloud` is running, you can set the `RUST_LOG` environmental varible to the level you want to see! (The `Makefile` has an example under the `start` context.
 
