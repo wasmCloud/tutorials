@@ -8,7 +8,8 @@ apt-get install wasmcloud wash -y
 docker-compose up -d
 
 docker pull tinygo/tinygo
-docker pull rust
+docker pull cjrash/tutorial
 docker pull wasmcloud/wasmcloud
+docker pull wasmcloud/wash
 
 touch /tmp/.init_done
