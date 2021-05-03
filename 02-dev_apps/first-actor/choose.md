@@ -1,5 +1,3 @@
-# Choose your adventure
-
 To demonstrate how wasmCloud leverages the powerful polyglot nature of WebAssembly, we have provided you with three identical calculators, written in three different languages. Throughout the tutorial, you will see sections similiar to this one:
 
 <details>
@@ -15,7 +13,7 @@ To demonstrate how wasmCloud leverages the powerful polyglot nature of WebAssemb
 
 </details>
 <details>
-  <summary>Assembly Script</summary>
+  <summary>AssemblyScript</summary>
 
 `cd assemblyscript`{{execute}}
 

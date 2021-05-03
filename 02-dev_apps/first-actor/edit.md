@@ -34,21 +34,32 @@ Open the file:
 Add the new functionality:
 
   <pre class="file" data-filename="go/main.go" data-target="insert" data-marker="// TODO: add multiplication">
-
 ```
   case "/mult":
     ret = "multiply: " + nums[0] + " * " + nums[1] + " = " + strconv.Itoa(num0*num1)
 ```
-
   </pre>
 
 > Note: You can click the above section and it will insert itself into the code block.
 
 </details>
 <details>
-  <summary>Assembly Script</summary>
+  <summary>AssemblyScript</summary>
 
-?????
+Open the file:
+
+`assemblyscript/assembly/index.ts`{{open}}
+
+Add the new functionality:
+
+  <pre class="file" data-filename="assemblyscript/assembly/index.ts" data-target="insert" data-marker="//TODO: add multiplication">
+```
+} else if (request.path == "mult") {
+    result = "multiply: " + numOne.toString() + " * " + numTwo.toString() + " = " + (numOne * numTwo).toString()
+```
+  </pre>
+
+> Note: You can click the above section and it will insert itself into the code block.
 
 </details>
 

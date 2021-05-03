@@ -25,12 +25,14 @@ Sign it
   <summary>AssemblyScript</summary>
   
   Build it    
-  ????
-  Sign it    
-  ????
+  `npm run build`{{execute}}
+
+Sign it  
+ `wash claims sign calculator.wasm --http_server --name "calculator" --ver 0.1.0 --rev 0`{{execute}}
+
 </details>
 
-> Notice: We have signed the `wasmcloud` module with the `-c wasmcloud:httpserver` flag. This essentially gives our actor the permissions it will need to communicate with a `httpserver` provider when the time comes.
+> Notice: We have signed the wasmCloud module with the `--http_server` flag. This essentially gives our actor the permissions it will need to communicate with a `httpserver` provider when the time comes.
 
 Once we run `wash claims sign`, on a wasm module, notice that a new file is dropped with the same name as our original file, with a `_s` appended to it. This is a sign wasmCloud actor. At this point, we can use wash to examine the metadata of our branch new actor.
 
@@ -51,7 +53,7 @@ Inspect it
   <summary>AssemblyScript</summary>
   
   Inspect it
-  ????
+ `wash claims inspect calculator_s.wasm`{{execute}}
 </details>
 
 The last thing that we have to do is push the signed actor to a OCI complient registry. Again, we get to use wash to do this!
@@ -73,7 +75,7 @@ The last thing that we have to do is push the signed actor to a OCI complient re
 <details>
   <summary>Assembly Script</summary>
   
-  ????
+`wash reg push localhost:5000/calc:0.1.0 calculator_s.wasm --insecure`{{execute}}
 </details>
 
 AWESOME!

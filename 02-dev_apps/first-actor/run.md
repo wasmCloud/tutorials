@@ -23,8 +23,14 @@ Lets build it, sign it, and push it again.
 
 </details>
 <details>
-  <summary>Assembly Script</summary>
-  
+  <summary>AssemblyScript</summary>
+
+`npm run build`{{execute interrupt T1}}
+
+`wash claims sign calculator.wasm -q --name "calculator" --ver 0.1.0 --rev 0`{{execute T1}}
+
+`wash drain all && wash reg push localhost:5000/calc:0.1.0 calculator_s.wasm --insecure`{{execute T1}}
+
 </details>
 
 > Note: We prefaced the registry push with a `wash drain all` which cleared the OCI cache. We did this since we are reusing the same tag.
