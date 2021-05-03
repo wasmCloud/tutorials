@@ -10,7 +10,7 @@ The `wash claims sign` command allows the user to sign a wasm file and couple it
 
 #### Example
 
-`claims sign ./table_tennis.wasm -c wasmcloud:httpserver --name "demo" --ver 0.1.0 --rev 0`{{execute}}
+`claims sign ./table_tennis.wasm --http_server --name "demo" --ver 0.1.0 --rev 0`{{execute}}
 
 The newly signed file will be along side the .wasm file with a `_s` appended to the file name. In this example, we now have `./table_tennis_s.wasm` (as seen in the wash output). Using the `inspect` command, we can see the new capabilities we added!
 

@@ -41,10 +41,7 @@ When the user wants to see what `wasmcloud` modules are deployed on a host, they
 
 ##### Important Fields
 
-In this example, you'll notice in the middle of the output `No actors found`. So far, we do not have any actors running in this environment. Next, we will start the `echo` actor and you will be able to see it here.
-
-Below the actor output is running provider information.  
-[TODO: Describe what the 2 items in the provider section are for.]
+In this example, you'll notice in the middle of the output `No actors found`. So far, we do not have any actors running in this environment. Next, we will start the `table_tennis` actor and you will be able to see it here.
 
 ### wash ctl start actor
 
@@ -52,9 +49,7 @@ In order to start an actor (or provider), we must envoke the `wash ctl start` co
 
 #### Example
 
-`ctl start actor wasmcloud.azurecr.io/echo:0.2.1`{{execute}}
-
-> Note: Since we have not added our `table_tennis` actor to the registry yet, we will start the `echo` actor that is in the `wasmcloud` container registry.
+`ctl start actor table_tennis_s.wasm`{{execute}}
 
 The output will confirm that we have started an actor. Now, we will be able to check out inventory again and see an actor running.
 
@@ -66,16 +61,16 @@ The output will confirm that we have started an actor. Now, we will be able to c
 <SNIP>
 
 Actor ID                 Image Reference
-MBCFOP<..SNIP..>HD3WD5   wasmcloud.azurecr.io/echo:0.2.1
+MBCFOP<..SNIP..>HD3WD5   N/A
 
 <SNIP>
 ```
 
 ### wash ctl start provider
 
-Just like starting an actor, you can start a provider with the `wash ctl start` command. To know what provider we should start for the echo actor, we can inspect it and see what capabilities it has.
+Just like starting an actor, you can start a provider with the `wash ctl start` command. To know what provider we should start for the table tennis actor, we can inspect it and see what capabilities it has.
 
-> Note: Remember from the previous screen, you can use `wash inspect` to see what capabilities an actor has. The `echo` actor has the HTTP Server capability.
+> Note: Remember from the previous screen, you can use `wash inspect` to see what capabilities an actor has. The `table_tennis` actor has the HTTP Server capability.
 
 #### Example
 
@@ -85,15 +80,15 @@ Once again, you will see the output that your provider started successfully and 
 
 ### wash ctl link
 
-Now that you have the actor and the provider running, you need to tell them to communication with con another. This is done in the linking process via `wash ctl link`. We are going to tell the `wasmcloud` runtime that we want our actor talking with out provider, and give it a few settings to do to.
+Now that you have the actor and the provider running, you need to tell them to communication with one another. This is done in the linking process via `wash ctl link`. We are going to tell the wasmCloud runtime that we want our actor talking with our provider, and give it a few settings to do to.
 
 > Note: In this example, you will need both the ACTOR ID and the PROVIDER ID that is provided from the inventory output. If you run the `get inventory` command, you will have that information in the output window while you are typing the link command.
 
 #### Example
 
-`ctl link <ACTOR-ID> <PROVIDER-ID> wasmcloud:httpserver PORT=8080`{{copy}}
+`ctl link <ACTOR-ID> VAG3QITQQ2ODAOWB5TTQSDJ53XK3SHBEIFNK4AYJ5RKAX2UNSCAPHA5M wasmcloud:httpserver PORT=8080`{{copy}}
 
 If you were to view the help for this command, you would see that the `wasmcloud:httpserver` piece is refered to as the "contract ID". These contracts can be found in this [repo](https://github.com/wasmCloud/actor-interfaces).
 
 At this point, you should see your request echoed back to you.
-`curl localhost:8080`{{execute T2}}
+`curl localhost:8080 -d "ping"`{{execute T2}}
