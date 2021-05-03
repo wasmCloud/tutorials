@@ -54,7 +54,7 @@ Add the new functionality:
 
   <pre class="file" data-filename="assemblyscript/assembly/index.ts" data-target="insert" data-marker="//TODO: add multiplication">
 ```
-} else if (request.path == "mult") {
+} else if (request.path == "/mult") {
     result = "multiply: " + numOne.toString() + " * " + numTwo.toString() + " = " + (numOne * numTwo).toString()
 ```
   </pre>
