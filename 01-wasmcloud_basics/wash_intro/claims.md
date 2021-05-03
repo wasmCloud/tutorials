@@ -1,10 +1,10 @@
 ## wash claims
 
-The `wash claims` subcommand is used for generating and managing JWTs for wasmcloud actors.
+The `wash claims` subcommand is used for generating and managing [JSON Web Tokens](https://jwt.io) (JWT) for wasmcloud actors.
 
 ### wash claims sign
 
-The `wash claims sign` command allows the user to sign a wasm file and couple it with `wasmcloud` capabilities.
+The `wash claims sign` command allows the user to sign a wasm file and couple it with wasmCloud capabilities.
 
 > Note: We have included an unsigned `wasm` module within the Katacoda environment named `table_tennis.wasm`. In a different tutorial, we will edit this file, resign it, and deploy the changes without downtime!
 
