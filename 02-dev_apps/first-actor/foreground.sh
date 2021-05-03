@@ -19,4 +19,4 @@ do
   done
 done
 
-clear && cd examples/ && wasmcloud -V
+cd examples/calculator && clear && wasmcloud -V
