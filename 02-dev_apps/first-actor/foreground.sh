@@ -2,6 +2,7 @@
 
 alias cargo='docker run -it -w /data --entrypoint cargo -v $(pwd):/data cjrash/tutorial'
 alias tinygo='docker run -it -w /data --entrypoint tinygo -v $(pwd):/data tinygo/tinygo'
+alias npm='docker run -it -w /data --entrypoint npm -v $(pwd):/data cjrash/tutorial:npm'
 
 clear
 
