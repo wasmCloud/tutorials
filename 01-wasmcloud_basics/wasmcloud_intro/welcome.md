@@ -1,4 +1,4 @@
-## From sketch to scale, IN SECONDS!
+## From Sketch to Scale, In Seconds
 
 Thanks for trying out `wasmcloud`! While our environment bootstraps, lets discuss the some of the core fundamentals motivating `wasmcloud`
 

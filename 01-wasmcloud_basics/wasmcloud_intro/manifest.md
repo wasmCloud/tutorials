@@ -23,7 +23,7 @@ links:
 
 ### A breakdown
 
-> Note: We will leverage the power of `wash` to explain where some of the manifest inpits come from. `wash` is the WAshcloud SHell and provides the developer with a ton of powerful tooling. It is highly recommended that you visit the `wash Introduction` tutorial to learn about its capabilities!
+> Note: We will leverage the power of `wash` to explain where some of the manifest inputs come from. `wash` is the WAshcloud SHell and provides the developer with a ton of powerful tooling. It is highly recommended that you visit the `wash Introduction` tutorial to learn about its capabilities.
 
 ##### Labels
 
