@@ -29,5 +29,4 @@ It is important to notice that `actor` fields in the link has an ID provided. Th
 Once you have the `manifest.yml` updated with the correct `actor_id`, you can start the run time and interface with your actor!
 
 > Note: At this point, everything is in place to test the current state of the actor!
-> `wasmcloud --allowed-insecure localhost:5000 -m manifest.yaml`{{execute}}
-> `curl localhost:8080/add?5,5`{{execute T2}}
+> `wasmcloud --allowed-insecure localhost:5000 -m manifest.yaml`{{execute}} > `curl localhost:8080/add?5,5 --output -`{{execute T2}}

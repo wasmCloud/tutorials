@@ -10,6 +10,6 @@ sudo apt install wasmcloud wash
 
 docker pull tinygo/tinygo
 docker pull cjrash/tutorial
-docker pull cjash/tutorial:npm
+docker pull cjrash/tutorial:npm
 
 touch /tmp/.init_done

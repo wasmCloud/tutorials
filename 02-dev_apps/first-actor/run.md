@@ -42,4 +42,4 @@ And now lets start `wasmcloud` with our `manifest.yaml`!
 
 AND FINALLY....
 
-`curl localhost:8080/mult?5,5`{{execute T2}}
+`curl localhost:8080/mult?5,5 --output -`{{execute T2}}
