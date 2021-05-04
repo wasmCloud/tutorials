@@ -40,7 +40,6 @@
   "files": [],
   "environment": {
     "uieditorpath": "/root/example",
-    "hidefinish": true,
     "hideHiddenFiles": true,
     "uilayout": "vscode-terminal-split"
   },
