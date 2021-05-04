@@ -8,6 +8,5 @@ By the end of this tutorial you should have an understanding of:
 
 - How wasmCloud leverages the polyglot power of WebAssembly
 - Signing a wasm module with `wash`
-- Pushing a signed wasmCloud module to an OCI compliant registry
 - Modifying a wasmCloud manifest file
 - Initializing `wasmcloud` with your manifest file and calling your actor

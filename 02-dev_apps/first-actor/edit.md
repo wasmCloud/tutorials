@@ -3,14 +3,13 @@ Now that we have verified we have a functional `wasmcloud` actor, lets work on e
 <details>
   <summary>Rust</summary>
 
-  <pre class="file" data-filename="rust/src/lib.rs" data-target="insert" data-marker="// TODO: add multiplication">
-
 Open the file:
 
 `rust/src/lib.rs`{{open}}  
 
 Add the new functionality:
 
+  <pre class="file" data-filename="rust/src/lib.rs" data-target="insert" data-marker="// TODO: add multiplication">
 ```
   "/mult" => {
     let mult = nums[0].parse::<i32>().unwrap() * nums[1].parse::<i32>().unwrap();
