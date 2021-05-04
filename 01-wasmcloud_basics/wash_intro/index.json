@@ -1,0 +1,51 @@
+{
+  "title": "Introduction to wash (wasmcloud shell)",
+  "description": "wash (the wasmcloud Shell) is a single command-line interface (CLI) to handle all of your wasmcloud tooling needs.",
+  "details": {
+    "steps": [
+      {
+        "title": "wash Overview",
+        "text": "allcmds.md",
+        "foreground": "foreground.sh"
+      },
+      {
+        "title": "Starting wash",
+        "text": "start.md"
+      },
+      {
+        "title": "wash claims",
+        "text": "claims.md"
+      },
+      {
+        "title": "wash ctl",
+        "text": "ctl.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        {
+          "file": "docker-compose.yml",
+          "target": "/root"
+        },
+        {
+          "file": "table_tennis.wasm",
+          "target": "/root"
+        }
+      ]
+    }
+  },
+  "files": [],
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu:1804"
+  }
+}
