@@ -1,0 +1,49 @@
+{
+  "title": "Introduction to wasmcloud",
+  "description": "A brief introduction to wasmcloud and its higher level concepts",
+  "details": {
+    "steps": [
+      {
+        "title": "Welcome to wasmcloud",
+        "text": "welcome.md",
+        "foreground": "foreground.sh"
+      },
+      {
+        "title": "Useful configuration",
+        "text": "config.md"
+      },
+      {
+        "title": "The manifest file",
+        "text": "manifest.md"
+      },
+      {
+        "title": "Echo Server Demo",
+        "text": "demo.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        {
+          "file": "docker-compose.yml",
+          "target": "/root"
+        }
+      ]
+    }
+  },
+  "files": [],
+  "environment": {
+    "uieditorpath": "/root/example",
+    "hideHiddenFiles": true,
+    "uilayout": "vscode-terminal-split"
+  },
+  "backend": {
+    "imageid": "ubuntu:1804"
+  }
+}
