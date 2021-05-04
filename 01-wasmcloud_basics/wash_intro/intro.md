@@ -18,4 +18,4 @@ In this lesson, we will discuss the high level functionality of `wash`. At the e
 - start and interact with the `wash` REPL
 - understand the most commonly used subcommand's functionality
 - Sign a custom wasm actor
-- Run a basic echo server
+- Run a basic HTTP server
