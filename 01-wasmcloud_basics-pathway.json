@@ -1,16 +1,16 @@
 {
-  "title": "wasmcloud basics",
-  "description": "washcloud Beginner Tutorials",
+  "title": "wasmCloud Basics",
+  "description": "wasmCloud Beginner Tutorials",
   "courses": [
     {
-      "title": "wash Introduction",
-      "description": "Introduction to wasmcloud REPL",
-      "course_id": "wash_intro"
+      "title": "wasmCloud Introduction",
+      "description": "Introduction to wasmCloud",
+      "course_id": "wasmcloud_intro"
     },
     {
-      "title": "wasmcloud Introduction",
-      "description": "Introduction to wasmcloud",
-      "course_id": "wasmcloud_intro"
+      "title": "wash Introduction",
+      "description": "Introduction to wasmCloud REPL",
+      "course_id": "wash_intro"
     }
   ]
 }
