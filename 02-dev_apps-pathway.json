@@ -1,6 +1,6 @@
 {
-  "title": "Developing Applications with wasmcloud",
-  "description": "Learn how to develop applications using the wasmcloud ecosystem",
+  "title": "Developing Applications with wasmCloud",
+  "description": "Learn how to develop applications using the wasmCloud ecosystem",
   "courses": [
     {
       "title": "Your First Actor",
